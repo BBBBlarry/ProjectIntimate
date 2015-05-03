@@ -188,7 +188,7 @@ public class Filesystem{
 			if(readTimer() > user.averageTimeOfGaze){
 				for(int i = 0; i < user.genrePreference.length; i++){ //all of user's stats approch to the new number
 					user.genrePreference[i] = user.genrePreference[i] + ((currentImage.genre[i] - user.genrePreference[i]) * (targetProb - 0.5) * MICROAPPROACHFACTOR); // resulting the approach is from no moving to moving half way
-					currentImage.genre[i] = currentImage.genre[i] + ((user.genrePreference[i] - currentImage.genre[i]) * (targetProb - 0.5) * MICROAPPROACHFACTOR); // resulting the approach is from no moving to moving half way
+					currentImage.genre[i] = currentImage.genre[i] + ((user.genrePreference[i] - currentImage.genre[i]) * (targetProb - 0.5) * MICROAPPROACHFACTOR);
 				}
 			}else{
 				// TODO: should the stats be moving away???
