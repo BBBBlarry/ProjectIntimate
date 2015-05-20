@@ -1,3 +1,4 @@
 # ProjectIntimate
 This is just a prototype of the project :D
-#Test
+
+<h1>Welcome to Project Intimate!</h1>
